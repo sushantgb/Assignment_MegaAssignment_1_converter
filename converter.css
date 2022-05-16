@@ -1,0 +1,93 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee', cursive;
+}
+body{
+    background-color: rgb(244, 250, 136);
+}
+/* styling for main container div */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    margin: auto;
+    width: 30%;
+    margin-top: 2em;
+    align-items: center;
+    background-color: rgb(251, 142, 195);
+    padding: 0.5em ;
+    border-radius: 2em;
+    height: 50vh;
+    opacity: 0.8;
+}
+/* styling for converter form */
+#converter{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+/* styling for feet field */
+#feetval{
+    padding: 0.7em;
+    border-style: none;
+}
+/* styling for button */
+#btn{
+    margin-top: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    border-style: none;
+    font-weight: bold;
+}
+/* styling for output */
+#output{
+    color: rgb(25, 26, 26);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 0.7px -1.5px 2px rgb(120, 210, 220);
+    text-align: center;
+}
+/* Styling effect */
+#btn:hover{
+    background-color: rgb(188, 232, 152);
+}
+/* Responsiveness styling */
+@media only screen and (max-width:950px){
+    .container{
+        width: 80%;
+        align-items: center;
+        padding: 2em;
+        height: 70vh;
+    } 
+    #converter{
+        width: 95%;
+    }
+    #output{
+        margin-top: 0.6em;
+        font-size: 1em;
+        width: 100%;
+    }
+}
+/* For galaxy fold device */
+@media only screen and (max-width:290px){
+    h2{
+        font-size: 1em;
+    }
+    #output{
+        font-size: 0.7em;
+    }
+}
+/* for nest hub device */
+@media only screen and (width:1024px){
+    .container{
+        height: 70vh;
+        width: 50%;
+    }
+    #output{
+        font-size: 1.5em;
+    }
+}

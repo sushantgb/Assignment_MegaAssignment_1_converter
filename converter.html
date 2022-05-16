@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- Headings -->
+        <h2>Unit Converter</h2>
+        <h5>Enter Value in feet</h5>
+        <!-- Converter form -->
+        <form id="converter">
+            <!-- feet input field -->
+            <label for="feetval"><b>Feet</b></label>
+            <input type="text" id="feetval" name="feetval">
+            <!-- Converstion button -->
+            <button id="btn" onclick="convert()">Convert to Centimetres</button>
+        </form>
+        <!-- Output div -->
+        <div id="output">
+
+        </div>
+    </div>
+    <!-- js file -->
+    <script src="converter.js"></script>
+</body>
+</html>
